@@ -2,17 +2,27 @@
 console.log("3 DOM.js loads");
 
 var CarLot = (function (oldCarLot) {
-  console.log("DOM iife:", CarLot);
 
   CarLot.populatePage = function (inventory) {
-  alert("pushed cars to page");
-  // Loop over the inventory and populate the page
+    console.log("inventory:", inventory);
+    let string = "";
 
-  // Now that the DOM is loaded, establish all the event listeners needed
-  // CarLot.activateEvents();
-  }
+  for (var i = 0; i < inventory.length; i++) {
+    let thing = inventory[i].make;
+    console.log(thing);
+  };
 
-return oldCarLot;
+  // Loop over your array of cars and build up an HTML string to build a card for each car. Also, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of container.
+
+  // Hint: You must build up the entire string of columns/rows before injecting into the DOM. Use a counter variable to know when to close a row after three columns.
+
+  // Create listeners after DOM is populated
+
+  CarLot.activateEvents();
+
+  };
+
+  return oldCarLot;
 
 })(CarLot);
 
@@ -21,9 +31,8 @@ return oldCarLot;
 
 // // Load the inventory and send a callback function to be
 // // invoked after the process is complete
-CarLot.loadInventory();
+CarLot.loadInventory(CarLot.populatePage);
 
-let thing = CarLot.getInventory();
-console.log("CarLot.getInventory:", thing);
+console.log("DOM iife:", CarLot);
 
 // tempAddition += inventory[i].price.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');```
