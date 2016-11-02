@@ -23,4 +23,7 @@ return oldCarLot;
 // // invoked after the process is complete
 CarLot.loadInventory();
 
+let thing = CarLot.getInventory();
+console.log("CarLot.getInventory:", thing);
+
 // tempAddition += inventory[i].price.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');```
