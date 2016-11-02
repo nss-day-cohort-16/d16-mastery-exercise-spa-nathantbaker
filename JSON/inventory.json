@@ -3,9 +3,39 @@
     {
       "make": "Nissan",
       "model": "Rogue",
-      "year": "2006",
-      "price": "8999",
-      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+      "year": 2006,
+      "price": 8999,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25,000 miles."
+    },{
+      "make": "Porsche",
+      "model": "911",
+      "year": 2010,
+      "price": 135000,
+      "description": "This one goes really fast. And it makes you look cool."
+    },{
+      "make": "Nissan",
+      "model": "GT-R",
+      "year": 2014,
+      "price": 80000,
+      "description": "Red interior. Black exterior. White grill. Your smill will be white that is."
+    },{
+      "make": "BMW",
+      "model": "M3",
+      "year": 2013,
+      "price": 60500,
+      "description": "0 to 60 in under 60 minutes. Probably under 60 seconds. Definitely under 60 minutes."
+    },{
+      "make": "Audi",
+      "model": "S5",
+      "year": 2015,
+      "price": 53000,
+      "description": "All your friends will want this car. So buy eight for all your friends."
+    },{
+      "make": "Audi",
+      "model": "TT",
+      "year": 2015,
+      "price": 40000,
+      "description": "This is an immaculate Audi with only 75 miles on it. We don't know how you don't jump on this shiny beauty."
     }
   ]
 }

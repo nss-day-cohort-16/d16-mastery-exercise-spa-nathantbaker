@@ -18,3 +18,5 @@ return oldCarLot;
 // // Load the inventory and send a callback function to be
 // // invoked after the process is complete
 // CarLot.loadInventory();
+
+// tempAddition += inventory[i].price.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');```
