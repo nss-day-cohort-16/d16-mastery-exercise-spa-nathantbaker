@@ -1,17 +1,24 @@
 "use strict";
 console.log("1 CarLot.js loads");
 
+
+
 var CarLot = (function () {
   console.log("CarLot iife:", CarLot);
-  var inventory = [];
+  let _cars = [];
 
   return {
+    // Pull data from JSON file
     loadInventory: function (callback) {
-      var inventoryLoader = new XMLHttpRequest();
-
-      inventoryLoader.addEventListener("load", function () {
-
+      var loader = new XMLHttpRequest();
+      loader.addEventListener("load", function () {
+        _cars = JSON.parse(this.responseText).cars;
+        console.log("array:", _cars);
+        callback(_cars);
       });
+
+      loader.open("GET", "../JSON/inventory.json");
+      loader.send();
     }
   };
 
