@@ -2,6 +2,7 @@
 console.log("1 CarLot.js loads");
 
 var CarLot = (function () {
+
   let _cars = [];
 
   return {

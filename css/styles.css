@@ -6,11 +6,24 @@
 /* ===GLOBAL=== */
 
 body {
-  background-color: #eee;
+  background-color: #e9ede6;
+}
+
+p {
+  font-family: georgia;
+  font-weight: lighter;
+  font-size: 1em;
 }
 
 /* ===PRIMARY=== */
 /* ===HEADER=== */
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  padding: 0;
+  margin: 0;
+}
 /* ===SIDEBAR=== */
 /* ===Car Cards=== */
 .car {
@@ -19,5 +32,13 @@ body {
   background-color: white;
   min-height: 100px;
   margin: 10px 0;
-  padding: 20px;
+  padding: 10px 20px;
+  box-shadow: 1px 2px 5px #aaa;
+}
+
+price {
+  color: grey;
+  font-weight: lighter;
+  font-size: .8em;
+  margin: 0;
 }
