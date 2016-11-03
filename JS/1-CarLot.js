@@ -1,5 +1,4 @@
 "use strict";
-console.log("1 CarLot.js loads");
 
 var CarLot = (function () {
 
@@ -11,7 +10,6 @@ var CarLot = (function () {
       var loader = new XMLHttpRequest();
       loader.addEventListener("load", function () {
         _cars = JSON.parse(this.responseText).cars;
-        console.log("array:", _cars);
         callback(_cars);
       });
 
@@ -27,5 +25,3 @@ var CarLot = (function () {
   };
 
 })();
-
-console.log("CarLot iife:", CarLot);

@@ -1,5 +1,4 @@
 "use strict";
-console.log("3 DOM.js loads");
 
 var CarLot = (function (oldCarLot) {
 
@@ -19,7 +18,7 @@ var CarLot = (function (oldCarLot) {
           <div class="car" id="car-${i+1}">
             <h2>${inventory[i].make} ${inventory[i].model}</h2>
             <price>${price}</price>
-            <p>${inventory[i].year}</p>
+            <span class="pull-right">${inventory[i].year}</span>
             <p class="description">${inventory[i].description}</p>
           </div>
         </div>
@@ -55,10 +54,7 @@ var CarLot = (function (oldCarLot) {
 
 })(CarLot);
 
-// // Load the inventory and send a callback function to be
-// // invoked after the process is complete
+// Push cars to page after JSON comes down
 CarLot.loadInventory(CarLot.populatePage);
-
-console.log("DOM iife:", CarLot);
 
 
