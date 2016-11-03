@@ -41,8 +41,7 @@ h2 {
 }
 
 price {
-  color: grey;
-  style: italic;
+  color: #78bc56;
   font-size: 1.5em;
   line-height: 1.8em;
   margin: 0;

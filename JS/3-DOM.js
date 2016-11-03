@@ -14,14 +14,15 @@ var CarLot = (function (oldCarLot) {
       let make = inventory[i].make,
           model = inventory[i].model,
           year = inventory[i].year,
-          price = inventory[i].price, // need to format for dollars
+          price = inventory[i].price,
           description = inventory[i].description;
+          price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //add commas
 
       html += `
         <div class="span4">
           <div class="car" id="car-${i}">
             <h2>${make} ${model}</h2>
-            <price>${price}</price>
+            <price>$${price}</price>
             <p>${year} — ${description}</p>
           </div>
         </div>
@@ -58,4 +59,4 @@ CarLot.loadInventory(CarLot.populatePage);
 
 console.log("DOM iife:", CarLot);
 
-// tempAddition += inventory[i].price.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');```
+
