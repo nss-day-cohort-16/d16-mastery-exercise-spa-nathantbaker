@@ -5,13 +5,19 @@ var CarLot = (function (oldCarLot) {
 
 
   CarLot.activateEvents = function() {
-    // alert("create event listeners");
+    // Add Listeners For Cars
+    let numCars = CarLot.getInventory().length;
+    for (let i = 0; i < numCars; i++) {
+      document.getElementById(`car-${i}`).addEventListener("click", CarLot.highlightCar);
+    }
+    // Input Field Event Listener
+    document.getElementById("input").addEventListener("keyup", function() {
+      alert("you typed in me.");
+    });
   };
 
   return oldCarLot;
 
 })(CarLot);
-
-// The second IIFE should augment the original one with a function that creates all of the eventHandlers that you need for the application. Name the function activateEvents.
 
 console.log("eventHandlers iife:", CarLot);

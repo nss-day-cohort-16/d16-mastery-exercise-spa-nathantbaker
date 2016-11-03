@@ -31,27 +31,26 @@ var CarLot = (function (oldCarLot) {
     }
 
   html += rowEnd;
-  console.log("html:", html);
 
   let target = document.getElementsByClassName("container")[1];
   target.innerHTML += html;
-
-  // Loop over your array of cars and build up an HTML string to build a card for each car. Also, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of container.
-
-  // Hint: You must build up the entire string of columns/rows before injecting into the DOM. Use a counter variable to know when to close a row after three columns.
-
 
   // Create listeners after DOM is populated
   CarLot.activateEvents();
 
   };
 
+  CarLot.highlightCar = function (border, color) {
+    alert("you clicked a car");
+  };
+
+  CarLot.resetCars = function () {
+
+  };
+
   return oldCarLot;
 
 })(CarLot);
-
-
-
 
 // // Load the inventory and send a callback function to be
 // // invoked after the process is complete
