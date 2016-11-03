@@ -19,7 +19,8 @@ var CarLot = (function (oldCarLot) {
           <div class="car" id="car-${i+1}">
             <h2>${inventory[i].make} ${inventory[i].model}</h2>
             <price>${price}</price>
-            <p>${inventory[i].year} — ${inventory[i].description}</p>
+            <p>${inventory[i].year}</p>
+            <p class="description">${inventory[i].description}</p>
           </div>
         </div>
       `;
