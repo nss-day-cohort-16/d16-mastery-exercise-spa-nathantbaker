@@ -3,7 +3,7 @@
    Author:  Nathan T. Baker
    ============================================================ */
 
-/* ===GLOBAL=== */
+/** GLOBAL **/
 
 body {
   background-color: #e9ede6;
@@ -17,14 +17,6 @@ p {
   line-height: 1.6em;
 }
 
-/*Form button was too close to edge of navbar container on small screens*/
-.navbar-inner {
-  padding: 10px;
-}
-
-/* ===PRIMARY=== */
-/* ===HEADER=== */
-
 h2 {
   font-size: 2em;
   padding: 0 0 0 40px;
@@ -33,8 +25,16 @@ h2 {
   background-size: 30px;
 
 }
-/* ===SIDEBAR=== */
-/* ===Car Cards=== */
+
+/** Nav **/
+
+/*Form button was too close to edge of navbar container on small screens*/
+.navbar-inner {
+  padding: 10px;
+}
+
+/** Car Cards **/
+
 .car {
   border: black 1px solid;
   border-radius: 10px;
@@ -51,4 +51,11 @@ price {
   font-size: 1.5em;
   line-height: 1.8em;
   margin: 0;
+}
+
+/** Toggle Class **/
+
+.border {
+  border: black 3px solid;
+  box-shadow: 2px 4px 7px #222;
 }
