@@ -20,7 +20,7 @@ var CarLot = (function (oldCarLot) {
       html += `
         <div class="span4">
           <div class="car" id="car-${i}">
-            <h2>${make} ${model}<h2>
+            <h2>${make} ${model}</h2>
             <price>${price}</price>
             <p>${year} — ${description}</p>
           </div>

@@ -12,33 +12,38 @@ body {
 p {
   font-family: georgia;
   font-weight: lighter;
-  font-size: 1em;
+  font-size: 1.6em;
+  line-height: 1.6em;
 }
 
 /* ===PRIMARY=== */
 /* ===HEADER=== */
 
 h2 {
-  font-size: 1.8em;
-  line-height: 1.2em;
-  padding: 0;
-  margin: 0;
+  font-size: 2.4em;
+  padding: 0 0 0 40px;
+  margin: 0 20px 10px 0;
+  background: url("../images/tire.svg") no-repeat 0 5px;
+  background-size: 30px;
+
 }
 /* ===SIDEBAR=== */
 /* ===Car Cards=== */
 .car {
   border: black 1px solid;
   border-radius: 10px;
-  background-color: white;
   min-height: 100px;
-  margin: 10px 0;
-  padding: 10px 20px;
+  margin: 15px 0;
+  padding: 15px 20px;
   box-shadow: 1px 2px 5px #aaa;
+  min-height: 250px;
+  background-color: white;
 }
 
 price {
   color: grey;
-  font-weight: lighter;
-  font-size: .8em;
+  style: italic;
+  font-size: 1.5em;
+  line-height: 1.8em;
   margin: 0;
 }
