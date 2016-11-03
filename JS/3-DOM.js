@@ -10,20 +10,15 @@ var CarLot = (function (oldCarLot) {
         rowEnd = "</div>";
 
     for (var i = 0; i < inventory.length; i++) {
-
-      let make = inventory[i].make,
-          model = inventory[i].model,
-          year = inventory[i].year,
-          price = inventory[i].price,
-          description = inventory[i].description;
-          price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //add commas
+      // format price
+      let price = `$${inventory[i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
 
       html += `
         <div class="span4">
           <div class="car" id="car-${i}">
-            <h2>${make} ${model}</h2>
-            <price>$${price}</price>
-            <p>${year} — ${description}</p>
+            <h2>${inventory[i].make} ${inventory[i].model}</h2>
+            <price>${price}</price>
+            <p>${inventory[i].year} — ${inventory[i].description}</p>
           </div>
         </div>
       `;
