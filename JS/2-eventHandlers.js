@@ -5,14 +5,18 @@ var CarLot = (function (oldCarLot) {
 
 
   CarLot.activateEvents = function() {
-    // Add Listeners For Cars
+
     let numCars = CarLot.getInventory().length;
+
+    // Add Listeners For Cars
     for (let i = 1; i <= numCars; i++) {
       document.getElementById(`car-${i}`).addEventListener("click", function() {
-        CarLot.highlightCar(`car-${i}`, "lightyellow");
+        CarLot.resetCars();
         // Passes DOM element clicked on and background color to toggle
+        CarLot.highlightCar(`car-${i}`, "lightyellow");
       });
     }
+
     // Input Field Event Listener
     document.getElementById("input").addEventListener("keyup", function() {
       alert("you typed in me.");

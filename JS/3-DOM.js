@@ -25,27 +25,29 @@ var CarLot = (function (oldCarLot) {
       `;
 
       if ((i+1) % 3 === 0) { html += rowMiddle; } // ends and starts a row
-
     }
 
   html += rowEnd;
-
   let target = document.getElementsByClassName("container")[1];
-  target.innerHTML += html;
+  target.innerHTML += html; // push string to page
 
   // Create listeners after DOM is populated
   CarLot.activateEvents();
 
   };
 
+  CarLot.resetCars = function () {
+    let target = document.getElementsByClassName("car");
+    for (var i = 0; i < target.length; i++) {
+      target[i].classList.remove("border"); // remove border class from car cards
+      target[i].style.backgroundColor = "white"; // set all car cards to white.
+    }
+  };
+
   CarLot.highlightCar = function (element, newColor) {
     let target = document.getElementById(element);
     target.classList.toggle("border");
     target.style.backgroundColor = newColor;
-  };
-
-  CarLot.resetCars = function () {
-
   };
 
   return oldCarLot;
