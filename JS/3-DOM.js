@@ -2,7 +2,7 @@
 
 var CarLot = (function (oldCarLot) {
 
-  CarLot.populatePage = function (inventory) {
+  oldCarLot.populatePage = function (inventory) {
 
     let html = "<div class='row-fluid'>",
         rowMiddle = "</div><div class='row-fluid'>",
@@ -36,7 +36,7 @@ var CarLot = (function (oldCarLot) {
 
   };
 
-  CarLot.resetCars = function () {
+  oldCarLot.resetCars = function () {
     let target = document.getElementsByClassName("car");
     for (var i = 0; i < target.length; i++) {
       target[i].classList.remove("border"); // remove border class from car cards
@@ -44,7 +44,7 @@ var CarLot = (function (oldCarLot) {
     }
   };
 
-  CarLot.highlightCar = function (element, newColor) {
+  oldCarLot.highlightCar = function (element, newColor) {
     let target = document.getElementById(element);
     target.classList.toggle("border");
     target.style.backgroundColor = newColor;

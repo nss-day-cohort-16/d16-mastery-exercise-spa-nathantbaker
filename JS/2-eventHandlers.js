@@ -2,7 +2,7 @@
 
 var CarLot = (function (oldCarLot) {
 
-  CarLot.activateEvents = function() {
+  oldCarLot.activateEvents = function() {
 
     let input = document.getElementById("input");
 
