@@ -13,7 +13,7 @@ var CarLot = (function () {
         callback(_cars);
       });
 
-      loader.open("GET", "../JSON/inventory.json");
+      loader.open("GET", "JSON/inventory.json");
       loader.send();
     },
 
