@@ -21,6 +21,9 @@ var CarLot = (function (oldCarLot) {
     input.addEventListener("keyup", function() {
       let clicked = document.getElementsByClassName("border")[0];
       clicked.getElementsByClassName("description")[0].innerHTML = input.value;
+      if (event.keyCode == 13) { // on enter, clear cards
+      oldCarLot.resetCars();
+      }
     });
   };
 
